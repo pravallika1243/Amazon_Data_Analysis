@@ -26,7 +26,7 @@ group by state, orderstatus
 order by orders_count desc
 limit 20;
 
---> 2. Sales by country
+--> 3. Sales by country
 
 select country,
 round(sum(totalamount)::numeric,2) as total_sales
@@ -35,7 +35,7 @@ group by country
 order by total_sales desc
 limit 10;
 
---> 3.find top 5 selling products
+--> 4.find top 5 selling products
 
 select productid,productname,
 sum(quantity) as total_sold,
@@ -45,7 +45,7 @@ group by productid,productname
 order by total_sales desc
 limit 10;
 
--->4. The Leakage & Margin Question (Discounts vs. Shipping)
+-->5. The Leakage & Margin Question (Discounts vs. Shipping)
 -->Business Value: Identifies if heavy discounting or high shipping costs are eating into your profit margins. If a product category has high discounts and high shipping costs, it might be losing money.
 
 select category,
@@ -58,7 +58,7 @@ group by category
 order by total_revenue desc
 limit 10;
 
---4. The Product Velocity Question
+--6. The Product Velocity Question
 --Business Value: Identifies your true "hero products" versus dead stock. This tells inventory managers exactly what to reorder immediately from suppliers.
 
 select 
@@ -73,7 +73,7 @@ group by productid,productname,category
 order by total_units_sold desc
 limit 10;
 
---5. The Payment Friction Question
+--7. The Payment Friction Question
 --Business Value: Reveals consumer purchasing habits. If a high-value category preferred by customers has a high order failure rate under a specific payment method, it indicates an integration bug in the checkout flow.
 
 select paymentmethod,
