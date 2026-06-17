@@ -18,9 +18,6 @@ Built an executive layout featuring Macro KPIs (Total Revenue, Order Volume, Ave
 
 ├── requirements.txt               # Dependencies (pandas, scikit-learn, etc.)
 ├── README.md                      # Project documentation (This file)
-├── notebooks/
-│   └── Amazon_Data_Analysis.ipynb # EDA, Data Cleaning & Regression Modeling
-├── scripts/
-│   └── amazon_sales.sql           # Database staging & performance audit queries
-└── dashboard/
-    └── Amazon_Sales_Analysis.pbix # Finished interactive Power BI report
+│── Amazon_Data_Analysis.ipynb # EDA, Data Cleaning & Regression Modeling
+├── amazon_sales.sql           # Database staging & performance audit queries
+├── Amazon_Sales_Analysis.pbix # Finished interactive Power BI report
