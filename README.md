@@ -1,4 +1,6 @@
 **Amazon Sales Analytics: ETL, Predictive Modeling & BI Pipeline**
+
+
 An end-to-end analytics engineering project that ingests raw e-commerce transaction data, trains a predictive regression model, builds a structured PostgreSQL relational database, and delivers an interactive, executive-ready Power BI dashboard tracking $91.8M in revenue.
 
 🛠️ Tech StackLanguages & Modeling: 
@@ -12,8 +14,9 @@ Business Intelligence: Power BI Desktop (DAX Modeling, Executive KPI Canvas)
 3. Business Intelligence Dashboard (Power BI)Connected Power BI seamlessly to PostgreSQL using the Npgsql framework to cache records into an optimized in-memory processing layer.
 Built an executive layout featuring Macro KPIs (Total Revenue, Order Volume, Average Order Value, and Units Sold).Cleaned presentation flows by removing technical system labels (e.g. Sum of totalamount), fixing categorical text clipping, and adding chronological quarterly velocity trend lines.
 
-📂 Repository File TreePlaintext├
-── requirements.txt               # Dependencies (pandas, scikit-learn, etc.)
+📂 Repository File TreePlaintext
+
+├── requirements.txt               # Dependencies (pandas, scikit-learn, etc.)
 ├── README.md                      # Project documentation (This file)
 ├── notebooks/
 │   └── Amazon_Data_Analysis.ipynb # EDA, Data Cleaning & Regression Modeling
