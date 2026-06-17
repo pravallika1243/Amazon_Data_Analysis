@@ -1,1 +1,6 @@
 *.ipynb linguist-documentation=true
+# Force all files in a specific folder to register as Python
+scripts/*.py linguist-language=Python
+
+# Force all SQL scripts to explicitly count as SQL
+*.sql linguist-language=SQL
